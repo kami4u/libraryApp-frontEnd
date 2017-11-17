@@ -4,13 +4,16 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 import './index.css';
 
+import Nav from './components/Nav';
 import BooksList from './components/BooksList';
 import registerServiceWorker from './registerServiceWorker';
 
 ReactDOM.render(
     <Router>
-        <Switch>
-           <Route path='/' component={BooksList} />
-        </Switch>
+        <Nav>
+            <Switch>
+                <Route path='/' component={BooksList} />
+            </Switch>
+        </Nav>
     </Router>, document.getElementById('root'));
 registerServiceWorker();

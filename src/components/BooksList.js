@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import request from 'axios';
 import {ROOT} from '../config';
+
+import BookCard from './BookCard';
 // import '../css/BooksList.css';
 
 class BooksList extends Component {
@@ -21,10 +23,14 @@ class BooksList extends Component {
   render() {
     return (
       <div>
-          {this.state.list.map((book,i) =>
-                <p key={i}>{book.title}{book.genre}{book.author}{book.read}</p>
-        )}
-   
+        {this.state.list.map((book,i) => {
+          return <BookCard key={i}
+            title={book.title}
+            genre={book.genre}
+            author={book.author}
+            read={book.read}
+          />;
+        })}
       </div>
     );
   }
