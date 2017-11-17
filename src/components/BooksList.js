@@ -3,7 +3,7 @@ import request from 'axios';
 import {ROOT} from '../config';
 
 import BookCard from './BookCard';
-// import '../css/BooksList.css';
+import '../css/BooksList.css';
 
 class BooksList extends Component {
   constructor (props) {
@@ -22,7 +22,7 @@ class BooksList extends Component {
 }
   render() {
     return (
-      <div>
+      <div className="container">
         {this.state.list.map((book,i) => {
           return <BookCard key={i}
             title={book.title}
