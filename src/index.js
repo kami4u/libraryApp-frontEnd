@@ -6,13 +6,15 @@ import './index.css';
 
 import Nav from './components/Nav';
 import BooksList from './components/BooksList';
+import GetBook from './components/GetBook';
 import registerServiceWorker from './registerServiceWorker';
 
 ReactDOM.render(
     <Router>
         <Nav>
             <Switch>
-                <Route path='/' component={BooksList} />
+                <Route exact path='/' component={BooksList} />
+                <Route path='/books/:id' component={GetBook} />
             </Switch>
         </Nav>
     </Router>, document.getElementById('root'));

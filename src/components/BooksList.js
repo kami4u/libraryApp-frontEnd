@@ -25,6 +25,7 @@ class BooksList extends Component {
       <div className="container">
         {this.state.list.map((book,i) => {
           return <BookCard key={i}
+            id={book._id}
             title={book.title}
             genre={book.genre}
             author={book.author}
