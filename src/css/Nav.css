@@ -56,18 +56,18 @@
     margin-bottom: .25rem;
   }
 
-  #my {
+  #search-bar {
     width: 130px;
     box-sizing: border-box;
     border: 2px solid #ccc;
     border-radius: 4px;
     font-size: 16px;
-    padding: 5px 20px 5px 40px;
+    padding: 5px 0px 5px 4px;
     -webkit-transition: width 0.4s ease-in-out;
     transition: width 0.4s ease-in-out;
 }
 
-  #my:focus {
+  #search-bar:focus {
     width: 50%;
 }
 

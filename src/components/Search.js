@@ -5,7 +5,7 @@ class Search extends React.Component {
     render () {
         return (
             <div>
-                <input id='my' typt='text' onChange={this.props.handleChange} value={this.props.str}></input>
+                <input id='search-bar' placeholder='Search here...' onChange={this.props.handleChange} value={this.props.str}></input>
             </div>
         );
     }   

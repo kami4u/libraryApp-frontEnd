@@ -8,7 +8,7 @@ class List extends React.Component {
                     {this.props.books.map(function(book,i) {
                         console.log(book);
                         return (
-                            <Item key={i} author={book.author} id={book._id} />
+                            <Item key={i} title={book.title} id={book._id} />
                         );
                     })}
             </div>
@@ -20,7 +20,7 @@ class Item extends React.Component {
     render () {
         return (
             <NavLink to={`/books/${this.props.id}`}>
-                <p>{this.props.author}</p>
+                <p>{this.props.title}</p>
             </NavLink>        
         );
     }

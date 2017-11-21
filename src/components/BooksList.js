@@ -35,7 +35,7 @@ class BooksList extends Component {
           <p className="lead text-muted">The best of young adult books. Young-adult books are books marketed to adolescents, roughly between the ages of 12 and 17, and usually feature main characters in that age range.
 </p>
           <div>
-            <Search handleChange={this.handleChange} searchTerm={this.state.searchTerm}></Search>
+            <Search handleChange={this.handleChange} str={this.state.searchTerm}></Search>
             <List books={filteredBooks}></List>
           </div>
         </div>
