@@ -6,7 +6,6 @@ import BookCard from './BookCard';
 import Search from './Search';
 import List from './List';
 import filterBooks from '../utils/main';
-import '../css/BooksList.css';
 
 class BooksList extends Component {
   constructor (props) {
