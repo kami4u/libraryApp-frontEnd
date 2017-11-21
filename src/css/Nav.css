@@ -56,6 +56,21 @@
     margin-bottom: .25rem;
   }
 
+  #my {
+    width: 130px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    padding: 5px 20px 5px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+  #my:focus {
+    width: 50%;
+}
+
   @media screen and (max-width: 700px) {
     .card-text {
         font-size: 100%;

@@ -1,4 +1,5 @@
 import React from 'react';
+import {NavLink} from 'react-router-dom';
 
 class List extends React.Component {
     render() {
@@ -7,7 +8,7 @@ class List extends React.Component {
                     {this.props.books.map(function(book,i) {
                         console.log(book);
                         return (
-                            <Item key={i} author={book.author} />
+                            <Item key={i} author={book.author} id={book._id} />
                         );
                     })}
             </div>
@@ -18,8 +19,9 @@ class List extends React.Component {
 class Item extends React.Component {
     render () {
         return (
-            <p>{this.props.author}</p>
-        
+            <NavLink to={`/books/${this.props.id}`}>
+                <p>{this.props.author}</p>
+            </NavLink>        
         );
     }
 }
