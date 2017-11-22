@@ -1,8 +1,9 @@
 const filterbooks = function (books, searchTerm) {
     return books.filter(function (book) {
-        const lowerCaseBook = book.author.toLowerCase();
+        const title = book.title.toLowerCase().includes(searchTerm);
+        const author = book.author.toLowerCase().includes(searchTerm);
         if (searchTerm === '') return;
-        return lowerCaseBook.includes(searchTerm) || book.author.includes(searchTerm);
+        return title || author;
     });
 };
 

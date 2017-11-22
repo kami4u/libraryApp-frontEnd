@@ -20,7 +20,6 @@ class BooksList extends Component {
   componentDidMount () {
     request.get(`${ROOT}/books`)
         .then((res) => {
-          console.log(res.data);
             this.setState({list: res.data});
         })
         .catch((error) => {console.log(error);});
@@ -32,8 +31,7 @@ class BooksList extends Component {
         <section className="jumbotron text-center">
         <div className="container">
           <h1 className="jumbotron-heading">Library Listing!</h1>
-          <p className="lead text-muted">The best of young adult books. Young-adult books are books marketed to adolescents, roughly between the ages of 12 and 17, and usually feature main characters in that age range.
-</p>
+          <p className="lead text-muted">A list of books for young adults.</p>
           <div>
             <Search handleChange={this.handleChange} str={this.state.searchTerm}></Search>
             <List books={filteredBooks}></List>

@@ -9,6 +9,7 @@ class BookCard extends Component {
           <NavLink to={`/books/${this.props.id}`}>
             <div className="card">
               <img src={this.props.img} height="300" width="200" alt="Card image caption" />
+              <p className="card-text">{this.props.title}</p>
               <p className="card-text">{this.props.author}</p>
             </div>
           </NavLink>
