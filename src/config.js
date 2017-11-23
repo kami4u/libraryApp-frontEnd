@@ -1,4 +1,4 @@
 module.exports = {
-    ROOT: 'http://localhost:4000/api',
+    ROOT: 'https://afternoon-lake-28470.herokuapp.com/api',
     USERNAME: 'kamran'
   };
