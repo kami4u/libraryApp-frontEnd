@@ -7,4 +7,5 @@ You will need the back-end API running in order for the app to work. Please visi
 1. Check if node and npm installed by doing `$ node -v` and `$ npm -v` else here is the link to download `https://www.npmjs.com/get-npm`
 2. In a terminal window do `npm install` to install required modules
 3. To run the library APP do `npm start` so APP will be running on `localhost:3000`
+4. Here is the link to deployed APP `https://library-app-front-end.herokuapp.com/`
 4. Now you will be able to interact with the App.
